@@ -1,0 +1,22 @@
+:root {
+    --blue: #0000ff ;
+    --white: #ffffff;
+}
+body {
+    margin: 0;
+}
+.container {
+    box-sizing: border-box;
+    max-width: 1150px;
+    width: 90%;
+    margin: 0px auto;
+}
+p {
+    font-size: 60px;
+    color: var(--blue);
+}
+@media (max-width: 992px) {
+    p {
+        color: brown;
+    }
+}

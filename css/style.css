@@ -209,13 +209,13 @@ body {
     margin-top: 5px;
  }
  .box-master {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     background-color: #a1c7d4;
     margin: 0px auto;
     margin-top: 50px;
-    grid-template-columns: 300px 300px 300px;
     max-width: 1020px;
     min-height: 396px;
     border-radius: 12px;
@@ -224,7 +224,7 @@ body {
     display: grid;
     align-content: center;
     justify-content: space-evenly;
-    max-width: 300px;
+    width: 300px;
     height: 176px;
     row-gap: 0px;
     background-color: #FFFFFF;

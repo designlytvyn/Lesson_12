@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-    font-size: 16px;
     padding: 0;
     margin: 0;
     text-decoration: none;
@@ -12,6 +11,12 @@
 }
 body {
     position: relative;
+    background-image: url(../img/Rectangle\ 1.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: inherit;
+    max-width: 1400px;
+    margin: 0px auto;
 }
 header {
     position: absolute;
@@ -24,14 +29,6 @@ header {
     top: 60px;
     left: 50%;
     transform:translate(-50%);
-}
-body {
-    background-image: url(../img/Rectangle\ 1.jpg);
-    background-repeat: no-repeat;
-    background-position: top center;
-    background-size: inherit;
-    max-width: 1400px;
-    margin: 0px auto;
 }
  a { 
     color: #000000;
@@ -211,9 +208,10 @@ body {
  .box-master {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background-color: #a1c7d4;
+    padding: 0px 13px;
     margin: 0px auto;
     margin-top: 50px;
     max-width: 1020px;
@@ -263,7 +261,14 @@ body {
 .box-4 {
     order: 4;
 }
-.input {
+h3 {
+    margin-top: 30px;
+    margin-bottom: 7px;
+    font-size: 32px;
+    font-weight: 500px;
+    text-transform: uppercase;
+}
+.input-block {
     max-width: 1180px;
     position: absolute;
     margin-top: 1437px;
@@ -273,6 +278,7 @@ body {
 }
 .input-box {
     padding-top: 8px;
+    padding-bottom: 10px;
     width: 845px;
     height: 265px;
     background: #FFFFFF;
@@ -281,25 +287,194 @@ body {
     border-radius: 10px;
     margin: 0px auto;
 }
-.input-box div {
-    width: 821px;
-    height: 247px;
-    margin: auto;
-    background: #FFFFFF;
-    border: 1px solid #d9d9d9;
-    backdrop-filter: blur(2px);
-    border-radius: 10px;
+input {
+    width: 233px;
+    height: 57px;
+    border-radius: 8px;
+    background-image: url(../img/user.png);
+    background-repeat: no-repeat;
+    text-align: left;
+    font-size: 19px;
+    margin: 0px auto;
+    padding: 0px 50px;
+    border: none;
+    background: #d9d9d9;
 }
-.foto {
+input:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.name, .mail, .button {
+    display: inline-block;
+}
+.button {
+    width: 180px;
+    height: 57px;
+    color: #FFFFFF;
+    background-color: var(--blue);
+    text-align: center;
+}
+.button:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+.name {
+    background-image: url(../img/user.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 15px;
+    margin-right: 70px;
+}
+.mail {
+    background-image: url(../img/phone-in-talk.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    background-position: 15px;
+    margin-right: 70px;
+}
+.images {
+    position: absolute;
+    max-width: 1180px;
+    width: 98%;
+    left: 50%;
+    transform:translate(-50%); 
+    margin-top: 1800px;
+}
+.images-block {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    max-width: 979px;
-    min-height: 129px;
-    margin-top: 80px;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    max-width: 980px;
+    min-height: 128px;
 }
-.foto img {
+footer {
+    position: absolute;
+    margin-top: 2010px;
+    max-width: 1400px;
+    width: 100%;
+    min-height: 400px;
+    background-position: left;
+    background: linear-gradient(91.75deg, #A1C7D4 18.06%, #0680AA 98.16%);
+} 
+.footer {
+    margin: 0px auto;
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1180px;
+}
+.box-left {
+    margin-top: 60px;
+}
+.box-menu {
+    align-items: flex-end;
+}
+.logo-footer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.logo-footer a p {
+    font-family: 'Sofia Sans';
+    text-transform: uppercase;
+    font-size: 39px;
+    line-height: 30px;
+}
+.logo-footer > a + a p {
+    color: #0f2d4a;;
+}
+.logo-footer > a + a span {
+    color: #0f2d4a;
+    font-size: 26px;
+    font-family: 'Sofia Sans';
+    text-transform: lowercase;
+}
+
+.menu-footer ul {
+    list-style: none;
+    margin-right: 100px;
+    text-decoration: none;
+}
+.menu-footer ul li a {
+    color: #0f2d4a;
+    font-size: 20px;
+}  
+.menu-footer > a  {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+}
+.menu-footer > a:active {
+    font-weight: 800;
+}
+.menu-footer > a + a {
+    border-left: 1px solid #000000;
+    padding-left: 5px;
+    font-weight: 400;
+}
+.menu-footer > a + a:active {
+    font-weight: 800;
+}
+.box-left .box-menu {
+    display: flex;
+}
+.contacts-footer {
+    margin-top: 60px;
+    line-height: 30px;
+    margin-right: 6%;
+}
+.team h5 {
+    color: #0f2d4a;
+    font-size: 20px;
+}
+.team p {
+    color: #0f2d4a;
+    font-size: 20px;
+}
+
+
+.contacts-footer h4 {
+    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-style: normal;
+    color: white;
+    letter-spacing: 2px;
+}
+.contacts-footer .tel {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+.contacts-footer .social {
+    max-width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contacts-footer .insta {
+    display: flex;
+    align-items: center;
+}
+.contacts-footer .email {
+    display: flex;
+    align-items: center;
+}
+.contacts-footer a img {
+    margin-right: 25px;
+}
+.contacts-footer .copiryght {
+    margin-top: 20px;
+    margin-left: 210px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.contacts-footer p {
+    color: white;
+    font-style: normal;
+
 }
 
  

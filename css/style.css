@@ -268,10 +268,116 @@ h3 {
     font-weight: 500px;
     text-transform: uppercase;
 }
+.content-box .circle {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/Rectangle\ 35.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 150px;
+    left: 50%;
+    transform: translate(-50%);
+    top: 105px;
+    border: 1px solid #000000;
+}
+.content h2 {
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+.content {
+    position: absolute;
+    text-align: center;
+    margin-top: 1440px;
+    align-items: center;
+    left: 0px;
+    right: 0px;
+    z-index: -3;
+}
+.content-box {
+    max-width: 970px;
+    min-height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0px auto;
+}
+.content-box h4 {
+    font-size: 20px;
+    color: var(--blue);
+    margin-bottom: 5px;
+}
+.content-box div {
+    width: 350px;
+    height: 120px;
+}
+.box_1, .box_5 {
+    text-align: right;
+}
+.box_2, .box_6 {
+    text-align: left;
+}
+.box_3 {
+    text-align: right;
+    padding-right: 6%;
+}
+.box_4 {
+    text-align: left;
+    padding-left: 6%;
+}
+.box_1 {
+    padding-right: 2%;
+}
+.box_2 {
+    padding-left: 2%;
+}
+.content-second {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 480px;
+    min-height: 86px;
+    margin: 0px auto;
+    margin-top: 60px;
+}
+.element {
+    display: grid;
+    grid-template-columns: 70px 70px;
+    grid-template-rows: 81px 81px 81px;
+    align-items: center;
+    justify-items: center;
+    align-content: space-between;
+    justify-content: space-between;
+    width: 320px;
+    height: 270px;
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    bottom: 0px;
+    transform: translate(-50%);
+}
+.element div {
+    width: auto;
+    height: auto;
+}
+.content .element p {
+    color: #fff;
+    padding-top: 2px;
+    background:#46B1DE;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+}
+.element-1 {
+    margin-right: 50px;
+}
+.element-2{
+    margin-left: 50px;
+}
 .input-block {
     max-width: 1180px;
     position: absolute;
-    margin-top: 1437px;
+    margin-top: 2180px;
     text-align: center;
     left: 50%;
     transform:translate(-50%);
@@ -338,7 +444,7 @@ input:active, :hover, :focus {
     width: 98%;
     left: 50%;
     transform:translate(-50%); 
-    margin-top: 1800px;
+    margin-top: 2540px;
 }
 .images-block {
     display: flex;
@@ -350,7 +456,7 @@ input:active, :hover, :focus {
 }
 footer {
     position: absolute;
-    margin-top: 2010px;
+    margin-top: 2750px;
     max-width: 1400px;
     width: 100%;
     min-height: 400px;
@@ -433,8 +539,6 @@ footer {
     color: #0f2d4a;
     font-size: 20px;
 }
-
-
 .contacts-footer h4 {
     margin-bottom: 20px;
     font-size: 34px;

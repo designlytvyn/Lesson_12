@@ -588,9 +588,80 @@ footer {
     color: white;
     font-style: normal;
 }
-@media (max-width: 376px){
-    body {
-        background-size: 375%;
+@media (max-width: 767px){
+    .container-second {
+        flex-direction: column;
+        align-content: center;
+    }
+    .container-second > div {
+        margin: 10px 0px;
+    }
+    h2 {
+        margin-top: 400px;
+    }
+    .box-master {
+        justify-content: space-around;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        gap: 10px;
+    }
+    .content {
+        margin-top: 1150px;
+    }
+    .content-box .circle {
+        opacity: 50%;
+        border: none;
+    }
+    .element {
+        display: none;
+    }
+    .input-block {
+        margin-top: 1860px;
+    }
+    .images {
+        margin-top: 2215px;
+    }
+    .images-block {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    footer {
+        margin-top: 2680px;
+    }
+    .input-box {
+        width: 490px;
+        height: 300px;
+    }
+    .name {
+        margin-right: 0px;
+    }
+    .mail {
+        margin-right: 0px;
+    }
+    .button {
+        margin-top: 10px;
+    }
+}
+@media (max-width: 480px) {
+    .nav {
+        display: none;
+    }
+    .content {
+        display: none;
+    }
+    .input-block {
+        margin-top: 1870px;
+    }
+    .input-box {
+        width: 350px;
+        height: 410px;
+    }
+    .images {
+        margin-top: 2335px;
+    }
+    footer {
+        margin-top: 2800px;
     }
     header {
         max-width: 300px;
@@ -601,9 +672,6 @@ footer {
         display: none;
     }
     .lang {
-        display: none;
-    }
-    .container-centr {
         display: none;
     }
     .logo img {
@@ -679,48 +747,25 @@ footer {
         right: 64px;
     }
     .container-second {
-        justify-content: center;
-        margin: 0px auto;
-        margin-top: 285px;
+        margin-top: 290px;
     }
-    .container-second > div + div {
-        margin: 30px 0px;
+    .backgraund {
+        min-height: 568px;
     }
-    .container-second > div + div + div {
-        margin: 0px;
+    h2 {
+        margin-top: 500px;
+        font-size: 18px;
     }
-    .input-block {
-        margin-top: 1075px;
+    h2 span {
+        font-size: 18px;
     }
-    .input-box {
-        width: 300px;
-        height: 420px;
+    .container-centr {
+        max-width: 328px;
     }
-    h3 {
-        font-size: 15px;
-        font-weight: 600;
-    }
-    .input-box p {
+    p {
         font-size: 12px;
-    }
-    .name, .mail {
-        font-size: 12px;
-        margin: 0px auto;
-        width: 200px;
-        margin-bottom: 30px;
-        background-size: 10%;
-    }
-    .button {
-        font-size: 12px;
-    }
-    .container .container-second div .number {
-        font-size: 50px;
-    }
-    .images-block {
-        display: none;
     }
     footer {
-        margin-top: 1550px;
         height: 568px;
         background: linear-gradient(180deg, #A1C7D4 0%, #0680AA 100%);
     }
@@ -776,5 +821,14 @@ footer {
     margin-left: 0px;
     width: 20px;
     height: 20px;
+   }
+   h3 {
+    font-size: 18px;
+   }
+   input {
+    font-size: 12px;
+   }
+   .name {
+    margin-bottom: 10px;
    }
 }
